@@ -51,4 +51,14 @@ public class Garage {
         }
         return null;
     }
+
+    public ArrayList<Car> getCarsByModel(String model) {
+        ArrayList<Car> carsWithModel = new ArrayList<Car>();
+        for (Car car : parkedCars) {
+            if (car.getModel().equals(model)) {
+                carsWithModel.add(car);
+            }
+        }
+        return carsWithModel;
+    }
 }
