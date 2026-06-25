@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+
 public class Garage {
     private int id;
     private int uniqueld;
@@ -24,15 +25,18 @@ public class Garage {
             return false;
         }
     }
-    public int getCapacity(){
+
+    public int getCapacity() {
         return parkedCars.size();
     }
-    public boolean parkCar(Car car, License license){
-    if(CheckIfValid(car , license)) {
-        parkedCars.add(car);
-        return true;
-    }else{
-        return false;
+
+    public boolean parkCar(Car car, License license) {
+        if (CheckIfValid(car, license)) {
+            parkedCars.add(car);
+            return true;
+        } else {
+            return false;
+        }
     }
-    }
+    
 }
