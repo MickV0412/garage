@@ -28,8 +28,11 @@ public class Garage {
         return parkedCars.size();
     }
     public boolean parkCar(Car car, License license){
-    if(){
-
+    if(CheckIfValid(car , license)) {
+        parkedCars.add(car);
+        return true;
+    }else{
+        return false;
     }
     }
 }
