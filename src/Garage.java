@@ -38,10 +38,9 @@ public class Garage {
             return false;
         }
     }
-    public void unparkCar(Car car){
-        if(){
-            parkedCars.contains(car);
-            return true;
+    public void unparkCar(Car car) {
+        if (parkedCars.contains(car)) {
+            parkedCars.remove(car);
         }
     }
 }
