@@ -1,12 +1,12 @@
 import java.util.ArrayList;
-public class garage {
+public class Garage {
     private int id;
     private int uniqueld;
     ArrayList<Car> parkedCars = new ArrayList<Car>();
     private int maxCapacity;
     private boolean availableSpace;
 
-    public garage(int maxCapcity) {
+    public Garage(int maxCapcity) {
 
     }
 
@@ -19,9 +19,17 @@ public class garage {
 
         }
         if (availableSpace == true && licenseMatchesCar == true && licenseMatchesGarage == true) {
-        return true;
-        }else{
+            return true;
+        } else {
             return false;
         }
+    }
+    public int getCapacity(){
+        return parkedCars.size();
+    }
+    public boolean parkCar(Car car, License license){
+    if(){
+
+    }
     }
 }
