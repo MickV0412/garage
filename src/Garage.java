@@ -43,4 +43,12 @@ public class Garage {
             parkedCars.remove(car);
         }
     }
+    public Car getCarByLicense(String license) {
+        for (Car car : parkedCars) {
+            if (car.getLicensePlate().equals(license)) {
+                return car;
+            }
+        }
+        return null;
+    }
 }
